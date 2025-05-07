@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import uz.asianuniversity.entity.Student;
 import uz.asianuniversity.payload.request.StudentRequest;
+import uz.asianuniversity.payload.response.StudentResponse;
 import uz.asianuniversity.service.StudentService;
 
 @RestController
@@ -18,7 +19,7 @@ public class StudentController {
 
     @PostMapping
     public HttpEntity<?> createStudent(@RequestBody StudentRequest studentRequest){
-        Student createdStudent = studentService.createStudent(studentRequest);
+        StudentResponse createdStudent = studentService.createStudent(studentRequest);
         return ResponseEntity.status(201).body(createdStudent);
     }
 //

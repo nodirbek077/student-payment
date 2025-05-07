@@ -24,6 +24,6 @@ public class StudentService {
 
         Student savedStudent = studentRepository.save(newStudent);
 
-        return new StudentResponse(savedStudent.getId(), "Student created successfully", 0);
+        return new StudentResponse(0, "Student created successfully", savedStudent.getId());
     }
 }

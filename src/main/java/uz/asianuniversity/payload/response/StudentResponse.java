@@ -9,8 +9,8 @@ import uz.asianuniversity.commons.GeneralResponse;
 public class StudentResponse extends GeneralResponse {
     private Integer studentId;
 
-    public StudentResponse(Integer studentId, String message, Integer code) {
-        super(message, code);
+    public StudentResponse(Integer errorCode, String errorMessage, Integer studentId) {
+        super(errorCode, errorMessage);
         this.studentId = studentId;
     }
 }
