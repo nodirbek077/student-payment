@@ -9,20 +9,20 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "Clinic API",
-                description = "Information about management of clinic system",
+                title = "Student Payment System API",
+                description = "Information about management of student payment system",
                 version = "1.0"
         ),
         security = {
                 @SecurityRequirement(
-                        name = "bearerAuth"
+                        name = "basicAuth"
                 )
         }
 )
 @SecurityScheme(
-        name = "bearerAuth",
+        name = "basicAuth",
         description = "JWT auth description",
-        scheme = "bearer",
+        scheme = "basic",
         type = SecuritySchemeType.HTTP,
         bearerFormat = "JWT",
         in = SecuritySchemeIn.HEADER
