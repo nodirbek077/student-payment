@@ -25,7 +25,7 @@ public class Transaction {
 
     private String comment; //client comment
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "student_id")
     private Student student;  // connecting to the student
 }

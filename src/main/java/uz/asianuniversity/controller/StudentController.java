@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import uz.asianuniversity.entity.Student;
 import uz.asianuniversity.payload.request.StudentRequest;
 import uz.asianuniversity.payload.response.StudentResponse;
 import uz.asianuniversity.service.StudentService;
